@@ -9,7 +9,7 @@
   "scripts": {
     "tsc": "tsc",
     "start": "node dist/server.js",
-    "build": "npm run tsc && copyfiles -u 1 scr/**/*.mustache dist/",
+    "build": "npm run tsc && copyfiles -u 1 src/**/**/*.mustache dist/",
     "postinstall": "npm run tsc && copyfiles -u 1 scr/**/*.mustache dist/",
     "start-dev": "nodemon -e ts,json,mustache src/server.ts"
   },
